@@ -20,10 +20,14 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClick(View v) {
         Intent i = new Intent(MainActivity.this, Result.class);
-        //final Spinner group = (Spinner)findViewById(R.id.txtGroup);
-        //String w = group.toString();
-        String w = "here";
-        i.putExtra("val",w);
+        final Spinner group = (Spinner)findViewById(R.id.txtGroup);
+        EditText tickets = (EditText)findViewById(R.id.numTickets) ;
+        String groupChoice = group.getSelectedItem( ).toString();
+        int numTick = Integer.parseInt(tickets.getText().toString());
+        double cost = 79.99;
+        i.putExtra("groupName",groupChoice);
+        i.putExtra("numT",numTick);
+        i.putExtra("cost",cost);
         startActivity(i);
 
     }
