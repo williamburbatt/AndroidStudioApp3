@@ -45,6 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="79dp"
         android:text="Find Cost"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:onClick="onClick"/>
 
 </RelativeLayout>
