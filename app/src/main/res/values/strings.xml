@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ticket Vault</string>
+    <string-array name="txtGroup">
+        <item value ="CrackedEggs">"Cracked Eggs"</item>
+        <item value ="ZigZag">"Zig Zag"</item>
+        <item value ="SpinOut">"Spin Out"</item>
+    </string-array>
 </resources>
